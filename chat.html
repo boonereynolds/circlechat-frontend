@@ -1,0 +1,19 @@
+<!-- this is the chat room -->
+
+<div style="border: 1px solid black;"><br>
+  <!-- this is where the messages will show up  -->
+  <ul>
+    <li ng-repeat="chat in chats.all">
+      {{chat}}
+    </li>
+  </ul>
+  <br><br>
+</div><br>
+
+<div>
+  <form>
+    message: <br>
+    <input type="text" name="content" placeholder="type message here...">
+    <input type="submit" value="Send Message">
+  </form>
+</div>

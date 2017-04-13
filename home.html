@@ -1,0 +1,16 @@
+<ul id="chats">
+  <!-- this will have a link to "show" a chat with all the messages in it -->
+  <li ng-repeat="chat in chats.all">
+  {{chat.name}} <a href="">(Show)</a>
+  </li>
+</ul>
+
+<hr>
+
+<div>
+  <h3>create a new chat!</h3>
+  <form class="add-chat" ng-submit="chats.addChat()">
+    <input type="text" name="name" placeholder="name your chat here..." ng-model="chats.newChat.name">
+    <input type="submit" value="Create Chat!">
+  </form>
+</div>
