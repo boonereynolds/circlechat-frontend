@@ -1,7 +1,7 @@
 <ul id="chats">
   <!-- this will have a link to "show" a chat with all the messages in it -->
-  <li ng-repeat="chat in chats.all">
-  {{chat.name}} <a href="">(Show)</a>
+  <li ng-repeat="chat in chats.all" data-id="{{chat._id}}">
+  {{chat.name}} <button ng-click="chats.setChat(chat)" ui-sref="chat">join!</button>
   </li>
 </ul>
 
